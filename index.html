@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portpolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ae2714cd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p><span>P</span>ortfolio.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mydiscussion">Discusion</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Devloper</p>
+                <h1>Hi,I'm <span>Prathikshan </span></h1>
+            </div>
+        </div>
+    </div>
+    <!--------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background.jpeg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="s-title">About Me</h1>
+                    <p>I am an undergraduate at the University of Moratuwa, Sri Lanka, pursuing studies in Information
+                        Technology and Management.
+                        I have a strong passion for technology and continuously seek to expand my knowledge in modern IT
+                        practices.
+                        My interests lie in web development and cybersecurity. I have hands-on experience in designing
+                        and developing websites and
+                        web applications with a focus on performance, usability, and security. I am particularly
+                        interested in building secure systems,
+                        applying best practices to protect applications from vulnerabilities, and ensuring reliable user
+                        experiences.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Educatin')">Education</p>
+                        <p class="tab-links" onclick="opentab('See more')">See more</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>U1/UX</span><br>designing Web/app interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Apps And Updates it</li>
+                            <li><span>U1/UX</span><br>designing Web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>There are no experience are There</span><br></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Educatin">
+                        <ul>
+                            <li><span>Web development</span><br>UOM Open learning platform</li>
+                            <li><span>Cyber security</span><br>Gatwik college Education</li>
+                            <li><span>English</span><br>A diploma In Brithish way acadamy</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="See more">
+                        <ul>
+                            <li><span>I enjoy learning new technologies, solving problems, and turning ideas into
+                                    practical solutions.<br>
+                                    My goal is to grow as a skilled IT professional who can contribute to developing
+                                    innovative and secure<br>
+                                    digital products.</span></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------my discussion------------->
+    <div id="mydiscussion">
+        <div class="container">
+            <h1 class="s-title">My Discussion</h1>
+            <div class="discussion-list">
+                <div><a href="https://medium.com/@shangamer.com/understanding-css-the-art-and-logic-of-web-styling-bc24276808b9" target="_blank">
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <h2>Understanding CSS:<br> The Art and Logic of Web Styling</h2></a>
+                </div>
+                <div><a href="https://medium.com/@shangamer.com/javascript-the-engine-of-the-modern-web-728446b6db74" target="_blank">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>JavaScript: The Engine of the Modern Web</h2>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!----------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="s-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1B359vmyHX/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://wa.me/94764085147"><i class="fa-brands fa-whatsapp" target="_blank"></i></a>
+                    <a href="https://www.linkedin.com/in/shan-gamer?utm_source=share_via&utm_content=profile&utm_medium=member_ios"  target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+                    <a href="https://medium.com/p/728446b6db74?postPublishedType=initial" target="_blank"><i class="fa-brands fa-magento"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="messsage" rows="6 " placeholder="Your messsage"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Prathikshan.All rights reserved.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
